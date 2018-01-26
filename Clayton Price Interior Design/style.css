@@ -18,7 +18,7 @@ a{
 }
 
 .hblock {
-  z-index: 10;
+  z-index: 1;
   background-color: #000;
   box-sizing: border-box;
   height: 90px;
@@ -29,7 +29,7 @@ a{
 
 
 .clayton img{
-  z-index: 20;
+  z-index: 4;
   position:fixed;
   top: 1%;
   left: 10%;
@@ -68,15 +68,15 @@ a{
 .banner img{
   z-index: 0;
   position: relative;
-  top: 200px;
+  margin-top: 10%;
 }
 
 .blurb{
   background-color: #FFF;
   text-align: center;
   position: relative;
-  height: 400px;
-  font-size: 30px;
+  height: 10em;
+  font-size: 2em;
   box-shadow: 0 2px 50px;
   z-index: 20;
 }
@@ -94,7 +94,7 @@ a{
 .blog-block{
 box-sizing:border-box;
 width: 50%;
-height: 500px;
+height: 16.7em;
 float: left;
 position: relative;
 border-bottom: 1px solid #000;
@@ -106,13 +106,14 @@ box-shadow: 0 2px 50px;
 
 .tips-block{
 width: 50%;
-height: 500px;
+height: 16.7em;
 box-sizing:border-box;
 float: right;
 position: relative;
 border-bottom: 1px solid #000;
 background-color: #fff;
 font-size: 30px;
+z-index: 3;
 }
 
 
@@ -162,6 +163,14 @@ font-size: 30px;
   background-position: center;
 }
 
+.homeapt .phead header{
+  z-index: 51;
+  position: relative;
+  font-size: 2.0em;
+  width: 30%;
+  margin: 0% 40% 40% 40%;
+}
+
 .oops{
   z-index: 49;
   box-sizing: border-box;
@@ -171,14 +180,6 @@ font-size: 30px;
   background-color: #fff;
 }
 
-.phead {
-  z-index: 51;
-  position: fixed;
-  top: 1%;
-  font-size: 2.5em;
-  width: 30%;
-  margin: 0% 40% 0% 40%;
-}
 
 .Hbutton{
   z-index: 100;
@@ -210,6 +211,7 @@ font-size: 30px;
   box-sizing: border-box;
   width: 100%;
   height: 100vh;
+  margin: 0;
   background-image: url(headerbg3.jpeg);
   background-position: center;
   background-attachment: fixed;
@@ -252,15 +254,8 @@ font-size: 30px;
 }
 
 .abouti img{
+  box-sizing: border-box;
   position: relative;
-  bottom: 700px;
-  width: 300px;
+  width: 15em;
   height: 150px;
-}
-
-.aboutp{
-  position: relative;
-  bottom: 700px;
-  margin: auto;
-  width: 60%;
 }
