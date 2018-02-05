@@ -28,7 +28,7 @@ ul li{
 
 
 header{
-  z-index: 1;
+  z-index: 2;
   max-height: 200px;
   min-height: 70px;
   width: 100%;
@@ -46,19 +46,29 @@ header ul{
 }
 
 .banner{
-  z-index: 0;
   height: 100vh;
   width: 100%;
-  background-image: url(headerbg3.jpeg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  position: relative;
+  z-index: 0;
 }
 
+.slideShowContainer{
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: fixed;
+}
+
+.slideShowContainer img{
+  height: 100vh;
+  width: 100%;
+}
+
+
 .banner img{
+  z-index: 1;
   position: relative;
-  top: 25%;
+  top: 10%;
 }
 
 .blurb{
@@ -66,6 +76,7 @@ header ul{
   height: 40vh;
   box-shadow: 0px 9px 70px;
   overflow-y: auto;
+  background-color: #fff;
 }
 
 .blurb-content{
@@ -75,14 +86,17 @@ header ul{
 }
 
 .blog-box{
+  z-index: 3;
   height: 55vh;
   box-shadow: -10px 10px 50px;
+  background-color: #fff;
 }
 
 .tips-box{
   z-index: 5;
   height: 55vh;
-  box-shadow: -3px 15px 50px;
+  box-shadow: 5px 15px 50px;
+  background-color: #fff;
 }
 
 
@@ -98,7 +112,7 @@ footer{
 }
 
 footer .contact{
-  padding-top: 15px;
+  padding: 15px 0px 0px 40px;
 }
 
 
